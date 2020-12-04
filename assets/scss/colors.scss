@@ -1,0 +1,31 @@
+// ----- Color pallet
+$cs-blue: #1a79f6;
+
+$cs-purple: #6d0783;
+
+$white: #ffffff;
+
+$black: #000000;
+
+$form-error: #ed1c24;
+
+// ----- Brand Colors
+$brandPrimary: $cs-blue;
+
+$brandSecondary: $black;
+
+$brandTertiary: $cs-purple;
+
+// ----- Text Colors
+$default-text-color: #262626;
+
+// ----- Background Colors
+$bg-grey--lightest: #F1F3F4;
+
+$bg-grey--light: #e5e5e5;
+
+$bg-blue-grey--light: #f4f7f9; // footer bg
+
+// ----- Default button bg
+$defaultBtnBg: $default-text-color;
+$defaultBtnBgHover: darken($defaultBtnBg, 10%);

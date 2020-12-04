@@ -1,0 +1,12 @@
+.bg--white {
+  background-color: #fff;
+}
+
+.bg--brand-primary {
+  background-color: $brandPrimary;
+}
+
+// ----- applied styles
+html {
+  @extend .bg--white;
+}

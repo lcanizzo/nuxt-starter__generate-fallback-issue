@@ -1,0 +1,132 @@
+.row--flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  margin: 0;
+}
+
+.column--flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.flex-wrap--no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap--wrap {
+  flex-wrap: wrap;
+}
+
+.width-auto {
+  width: auto;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.align--center {
+  align-items: center;
+}
+.align--stretch {
+  align-items: stretch;
+}
+.align--flex-start {
+  align-items: flex-start;
+}
+.align--flex-end {
+  align-items: flex-end;
+}
+
+.justify--center {
+  justify-content: center;
+}
+.justify--flex-start {
+  justify-content: flex-start;
+}
+.justify--flex-end {
+  justify-content: flex-end;
+}
+.justify--space-between {
+  justify-content: space-between;
+}
+
+//Tablet
+@media all and (max-width: $mobileMax) {
+  .flex-column--tablet {
+    flex-direction: column;
+  }
+  .flex-row--tablet {
+    flex-direction: row;
+  }
+
+  .align--center--tablet {
+    align-items: center;
+  }
+  .align--stretch--tablet {
+    align-items: stretch;
+  }
+  .align--flex-start--tablet {
+    align-items: flex-start;
+  }
+  .align--flex-end--tablet {
+    align-items: flex-end;
+  }
+
+  .justify--center--tablet {
+    justify-content: center;
+  }
+  .justify--flex-start--tablet {
+    justify-content: flex-start;
+  }
+  .justify--flex-end--tablet {
+    justify-content: flex-end;
+  }
+  .justify--space-between--tablet {
+    justify-content: space-between;
+  }
+}
+
+//Mobile
+@media all and (max-width: $smallMax) {
+  .flex-column--mobile {
+    flex-direction: column;
+  }
+  .flex-row--mobile {
+    flex-direction: row;
+  }
+
+  .align--center--mobile {
+    align-items: center;
+  }
+  .align--stretch--mobile {
+    align-items: stretch;
+  }
+  .align--flex-start--mobile {
+    align-items: flex-start;
+  }
+  .align--flex-end--mobile {
+    align-items: flex-end;
+  }
+
+  .justify--center--mobile {
+    justify-content: center;
+  }
+  .justify--flex-start--mobile {
+    justify-content: flex-start;
+  }
+  .justify--flex-end--mobile {
+    justify-content: flex-end;
+  }
+  .justify--space-between--mobile {
+    justify-content: space-between;
+  }
+}

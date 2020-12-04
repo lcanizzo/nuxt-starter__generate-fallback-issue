@@ -1,0 +1,76 @@
+// TODO: Compare with master
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $defaultFont;
+  font-size: $defaultFontSize;
+  color: $default-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headerFont;
+  color: $default-text-color;
+}
+
+i {
+  font-style: italic;
+}
+
+// ## == list styles
+// ## num list
+.num-list {
+  counter-reset: numLi;
+  margin-bottom: 30px;
+
+  > li {
+    &::before {
+      position: absolute;
+      left: 0;
+      counter-increment: numLi;
+      content: counters(numLi, '.') ". ";
+    }
+  }
+
+  li {
+    padding-left: 30px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// ## alpha list
+.alpha-list {
+  counter-reset: numLi;
+  margin-bottom: 30px;
+
+  > li {
+    &::before {
+      position: absolute;
+      left: 0;
+      counter-increment: numLi;
+      content: counter(numLi, upper-alpha)". ";
+    }
+  }
+
+  li {
+    padding-left: 30px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

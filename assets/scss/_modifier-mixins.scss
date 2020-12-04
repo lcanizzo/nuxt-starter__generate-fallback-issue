@@ -1,0 +1,158 @@
+@mixin modifier-mixin() {
+  // ----- font / typography modifiers
+  .font--light {
+    font-weight: 300;
+  }
+
+  .font--regular {
+    font-weight: 400;
+  }
+
+  .font--semi-bold {
+    font-weight: 600;
+  }
+
+  .font--bold {
+    font-weight: 700;
+  }
+
+  .font--white {
+    color: white;
+  }
+
+  .word-break--all,
+  .word-smart-wrapping,
+  .smart-wrapping {
+    word-break: break-all;
+  }
+
+  .text--uppercase {
+    text-transform: uppercase;
+  }
+
+  .text--capitalize {
+    text-transform: capitalize;
+  }
+
+  // ----- padding / spacing modifiers
+  .no-margin {
+    margin: 0;
+  }
+
+  @media all and (min-width: $desktopMin) {
+    .no-padding--desktop {
+      padding: 0;
+    }
+  }
+
+  @media all and (max-width: $largeMax) {
+    .no-padding--mobile {
+      padding: 0;
+    }
+  }
+
+  // border modifiers
+  .no-border {
+    border-bottom: none;
+  }
+
+  // ----- Hide SEO / Meta Data Image tags
+  .hiddenImage--metaData {
+    display: none;
+  }
+
+  // ----- Responsive Modifiers
+  img {
+    display: block;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .img--centered {
+    margin: 0 auto;
+  }
+
+  .img--right {
+    margin-left: auto;
+  }
+
+  // ----- Color Modifiers
+  .font--error,
+  .font--error-red,
+  .color--error-red {
+    color: #721c24;
+  }
+
+  // ----- Display Modifiers
+  .visibility-hidden {
+    visibility: hidden;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .width-auto {
+    width: auto;
+    min-width: 1px;
+  }
+
+  .noscroll {
+    overflow-y: hidden;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .inline--align-left {
+    display: inline;
+    float: left;
+  }
+
+  .inline--align-right {
+    display: inline;
+    float: right;
+  }
+
+  // ----- No Mobile, Desktop Only, Tablet Only, etc.
+  // Desktop
+  @media all and (min-width: $desktopMin) {
+    .no-desktop {
+      display: none;
+    }
+    .mobile-only {
+      display: none
+    }
+    .tablet-only {
+      display: none;
+    }
+  }
+  // Tablet
+  @media all and (min-width: 481px) and (max-width: $mobileMax) {
+    .no-tablet {
+      display: none;
+    }
+    .desktop-only {
+      display: none;
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
+  // Mobile
+  @media all and (max-width: 480px) {
+    .no-mobile {
+      display: none;
+    }
+    .desktop-only {
+      display: none;
+    }
+    .tablet-only {
+      display: none;
+    }
+  }
+}

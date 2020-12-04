@@ -1,0 +1,35 @@
+#site: build/_site/
+
+# redirects must be passed an empty object if none exist.
+# redirects:
+#   index.html: /
+#   old-page.html: new-page.html
+
+cloudfront_distribution_id: ${s3.cloudfront_distribution}
+cloudfront_wildcard_invalidation: true
+cloudfront_invalidate_root: true
+
+# routing_rules:
+#   - condition:
+#       key_prefix_equals: blog/some_path
+#     redirect:
+#       host_name: blog.example.com
+#       replace_key_prefix_with: some_new_path/
+#       http_redirect_code: 301
+
+# index_document: index.html
+# error_document: error.html
+
+# max_age:
+#   "assets/*": 6000
+#   "*": 300
+
+# gzip:
+#   - .html
+#   - .css
+#   - .md
+# gzip_zopfli: true
+
+# exclude_from_upload:
+#   - those_folders_of_stuff
+#   - i_wouldnt_want_to_upload

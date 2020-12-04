@@ -1,0 +1,26 @@
+// variables //
+
+// ----- Font default size
+$baseFontSize: 16;
+$defaultFontSize: $baseFontSize * 1px;
+$pxToRemFontSize: $baseFontSize;
+
+// ----- Font Stacks
+$openSansFontStack: 'OpenSans', Roboto, sans-serif;
+$fontAwesomeFontStack: 'Font Awesome 5 Pro';
+$headerFont: $openSansFontStack;
+$bodyFont: $openSansFontStack;
+$defaultFont: $bodyFont;
+
+// ----- Break Points
+$extraSmallMin: 320px;
+$extraSmallMax: 575px; // Extra-Small View (XS)
+$smallMin: 576px;
+$smallMax: 767px; // Small View (SM)
+$largeMin: 768px;
+$largeMax: 991px; // Large View (LG)
+$mobileMax: $largeMax;
+$desktopMin: 992px;
+
+// ------ Container Widths
+$container-outer--max-width: 1370px;

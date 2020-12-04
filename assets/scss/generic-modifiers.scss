@@ -1,0 +1,2 @@
+// Add Modifier classes to the mixin in _modifier-mixins.scss so we can scope them to different component (namely text-image) to override without !important
+@include modifier-mixin;

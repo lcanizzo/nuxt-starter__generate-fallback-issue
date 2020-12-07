@@ -2,7 +2,7 @@
   "name": "NUXT_STATIC_STARTER",
   "version": "1.0.0",
   "description": "Nuxt Static Starter",
-  "author": "Coresecure Inc.",
+  "author": "Luca Canizzo",
   "private": true,
   "scripts": {
     "dev": "nuxt",

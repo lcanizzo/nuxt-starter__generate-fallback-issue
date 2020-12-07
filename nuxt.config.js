@@ -113,6 +113,7 @@ export default {
 
   // Generate Configuration
   generate: {
-    dir: 'build/_site'
+    dir: 'build/_site',
+    fallback: true
   }
 }

@@ -21,11 +21,11 @@ $ nuxt build
 ```
 #### generate static project
 ```bash
-$ nuxt generate
+$ npm run generate
 ```
 #### launch server
 ```bash
-$ nuxt start
+$ npm run serve
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

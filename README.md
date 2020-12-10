@@ -1,6 +1,6 @@
-# Nuxt Static Starter
+# Nuxt Static Starter - Issue Demo Repo
 
-SETUP NOTE: Replace all cases of `EXPLICIT_` strings with application specific values until we have `.env` configured. (remove this note once you have)
+Demo repo for [This Issue](https://github.com/nuxt/nuxt.js/issues/8455)
 
 ## Build Setup
 Use node version: 12.18.3
